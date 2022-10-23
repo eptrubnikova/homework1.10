@@ -26,6 +26,7 @@ public class Main {
         // }
 
         task1();
+        task2();
 
     }
 
@@ -38,5 +39,14 @@ public class Main {
 
         String fuiiNameForReport = fullName.toUpperCase();
         System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fuiiNameForReport);
+    }
+
+    private static void task2() {
+        String firstName = "Семён";
+        String middleName = "Семёнович";
+        String lastName = "Иванов";
+        String fullName = lastName + ' ' + firstName + ' ' + middleName;
+        fullName = fullName.replace("ё", "е");
+        System.out.println("Данные ФИО сотрудника — " + fullName);
     }
 }
