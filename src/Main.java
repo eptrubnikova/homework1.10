@@ -18,11 +18,10 @@ public class Main {
     }
 
     private static void task2() {
-        String firstName = "Семён";
-        String middleName = "Семёнович";
-        String lastName = "Иванов";
-        String fullName = lastName + ' ' + firstName + ' ' + middleName;
-        fullName = fullName.replace("ё", "е");
+        String fullName = "Иванов Семён Семёнович";
+        if (fullName.contains("ё")) {
+            fullName = fullName.replace("ё", "е");
+        }
         System.out.println("Данные ФИО сотрудника — " + fullName);
     }
 }
